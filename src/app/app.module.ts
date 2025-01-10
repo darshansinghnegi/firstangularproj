@@ -4,17 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { EditdialogboxComponent } from './editdialogbox/editdialogbox.component';
+import { HeaderComponent } from './header/header.component';
+import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditdialogboxComponent
+    HeaderComponent,
+    ContentComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,
+    AppRoutingModule,FormsModule,ModalModule
     
   ],
   providers: [],

@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  
+    .logo {
+      height: 40px;
+    }
+  
+    .icons {
+      i {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+  .logo {
+    width: 40px; /* Square size */
+    height: 40px; /* Square size */
+    
+  }
+  .profile-image {
+    width: 40px; /* Square size */
+    height: 40px; /* Square size */
+    border-radius: 10px; /* Soft edges */
+    object-fit: cover; /* Ensure the image scales correctly */
+    border: 2px solid #fff; /* Optional border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
