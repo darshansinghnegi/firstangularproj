@@ -1,0 +1,30 @@
+
+
+<div class="container">
+
+    <h2>Staff Portal</h2>
+  
+    <!-- Display Shift Information -->
+    <p>Shift: {{ shiftDetails.shift }}</p>
+    <p>Working Days: {{ shiftDetails.days }}</p>
+  
+    <!-- Webcam Display -->
+    <!-- <ngx-webcam (imageCapture)="handleImage($event)" [trigger]="triggerObservable"></ngx-webcam> -->
+  
+    <!-- Button to trigger image capture -->
+  
+    <!-- Display captured image -->
+    
+    <div class="camera-container">
+      <video #videoElement *ngIf="showcamera" width="100%" autoplay></video>
+      <button (click)="capturePhoto()">Capture Photo</button>
+
+      <!-- Canvas to display the captured image -->
+      <canvas #canvas></canvas>
+      
+    <button (click)="capture()" class="btn btn-success mt-3">Capture Attendance</button>
+    </div>
+    
+  </div>
+  
+
